@@ -20,8 +20,11 @@ const Card = ({
 
     return (
         <div className={Style.card}>
-            <div className={Style.name}><SensorIcon type={sensoreType} /> {sensoreName}</div>
-            <div className={Style.boardname}>{boardName}</div>
+            <div className={Style.content}>
+                <div className={Style.name}>{sensoreName} <SensorIcon type={sensoreType} /></div>
+                <div className={Style.boardname}>{boardName}</div>
+            </div>
+            <div className={Style.value}>{sensoreValue}</div>
         </div>
     );
 };

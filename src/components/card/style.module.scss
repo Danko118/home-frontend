@@ -4,7 +4,10 @@
     width: 350px;
     height: auto;
 
-    padding: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
 
     background: #ffffff;
     border-radius: 20px;
@@ -19,6 +22,32 @@
         transform: scale(1.05);
     }
 
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+
+    padding: 20px;
+}
+
+.value {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: grey;
+    color: #ffffff;
+
+
+    box-shadow: inset 5px 0 10px rgba(0,0,0,.2);
+
+
+    font-size: 42px;
+    font-weight: 700;
 }
 
 .name {
