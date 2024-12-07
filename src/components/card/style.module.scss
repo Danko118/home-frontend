@@ -1,0 +1,44 @@
+.card {
+    cursor: pointer;
+
+    width: 350px;
+    height: auto;
+
+    padding: 20px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #d9d6d6;
+
+    transition: 0.1s all cubic-bezier(0.23, 1, 0.320, 1);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);   
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+
+}
+
+.name {
+    height: auto;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & svg {
+        width: auto;
+        height: 32px;
+    }
+}
+
+.boardname {
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+}
